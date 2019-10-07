@@ -1,0 +1,10 @@
+@import "@/assets/css/variables.scss";
+
+.app{
+    @include flex_horizontal_center;
+    &__container{
+        margin-top: 5rem;
+        width: 1140px;
+        max-width: 1140px;
+    }
+}

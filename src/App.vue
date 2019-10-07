@@ -1,24 +1,36 @@
 <template>
-    <div id="app">
-        {{data}}
+    <div id="app" class="app">
+        <div class="app__container">
+            <div class="app__sidebar">
+                <v-sidebar></v-sidebar>
+            </div>
+            <div class="app__content">
+                
+            </div>
+        </div>
     </div>
 </template>
 <script>
-import result from "./assets/api/results.json"
+import "./assets/css/root.scss"
+import "./assets/css/layout.scss"
+import { mapGetters } from 'vuex'
+import VSidebar from "./components/Sidebar/Sidebar"
 export default {
+    components: {
+        VSidebar
+    },
     data(){
         return{
             data: null
         }
     },
     created(){
-        this.getData();
+        this.$store.dispatch('GET_DATA');
+    },
+    computed: {
+        ...mapGetters(['GET_AIRLINES', 'GET_FLIGHTS'])
     },
     methods: {
-        getData(){
-            console.log(result)
-            this.data = result.flights[28]
-        },
         ls(){
             var sec = 90900 ;
             function getTimeString(sec){

@@ -1,0 +1,19 @@
+@import "@/assets/css/variables.scss";
+
+$card-width: 240px;
+
+@mixin absolute_center(){
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.sidebar{
+    &__airlines{
+        margin-top: $main-size;
+    }
+    &__reset{
+        margin-top: $main-size;
+        
+    }
+}

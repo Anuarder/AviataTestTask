@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E1E1E1;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button,
+a,
+input,
+select,
+label {
+    font-family: inherit;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.action-link{
+    cursor: pointer;
+    font-size: $main-size;
+    color: #7284E4;
+    border-bottom: 1px dashed #7284E4;
+    max-width: fit-content;
+}
+
+.fade-enter-active, 
+.fade-leave-active {
+    transition: all .2s ease;
+}
+
+.fade-enter,
+.fade-leave-active  {
+    opacity: 0;
+}

@@ -1,0 +1,128 @@
+@import "@/assets/css/variables.scss";
+
+.result{
+    &__card{
+        height: 170px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        margin-top: $main-size;
+        &:first-child{
+            margin-top: 0;
+        }
+        display: flex;
+        font-size: $main-size;
+    }
+    &__info{
+        width: 100%;
+        padding: 1rem;
+        @include flex_column;
+        &-content{
+            display: flex;
+            flex: 1;
+        }
+        &-footer{
+            margin: 0 2rem;
+            @include flex_vertical_center;
+        }
+    }
+    &__detail, &__conditions{
+        margin-right: 1.5rem;
+    }
+    &__refundable{
+        cursor: pointer;
+        color: #707276;
+        @include flex_vertical_center;
+        img{
+            margin-right: 7px;
+        }
+    }
+    &__carrier{
+        width:  120px;
+        @include flex_vertical_center;
+        font-size: .875rem;
+        font-weight: bold;
+        margin: 0 2rem;
+        img{
+            max-width: 20px;
+            margin-right: 7px;
+        }
+    }
+    &__itinerary{
+        @include flex_vertical_center;
+        &-content{
+            @include flex_column;
+        }
+        &-container{
+            @include flex_horizontal_between;
+        }
+        &-stops{
+            text-align: center;
+        }
+        &-origin, &-dest{
+            font-size: .625rem;
+            color: #B9B9B9;
+        }
+    }
+    &__departure, &__arrival{
+        h5{
+            font-size: $main-size;
+            text-transform: lowercase;
+            font-weight: normal;
+            span{
+                font-size: .625rem;
+                color: #ff3724cc;
+            }
+        }
+        h2{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+    &__departure{
+        margin-right:  2rem;
+    }
+    &__arrival{
+        margin-left: 2rem;
+    }
+    &__actions{
+        background: #F5F5F5;
+        width: 240px;
+        border-radius: 0px 4px 4px 0px;
+        text-align: center;
+        padding: $main-size;
+        h1{
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+        h5{
+            font-size: $main-size;
+            color: #707276;
+            font-weight: normal;
+            margin: 8px 0;
+        }
+    }
+    &__buy{
+        margin-top: 13px;
+        @include input_reset;
+        background: #55BB06;
+        width: 200px;
+        height: 40px;
+        font-size: 1.125rem;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: bold;
+    }
+    &__services{
+        @include flex_horizontal_between;
+        button{
+            @include input_reset;
+            background: #EAF0FA;
+            color: #5763B3;
+            border-radius: 2px;
+            font-size: $main-size;
+            font-weight: 600;
+            padding: 3px 8px;
+        }
+    }
+}

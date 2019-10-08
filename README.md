@@ -1,4 +1,8 @@
-# aviata
+# Test task aviata
+
+- не особо понял как с багажом работать
+- данные в GET_FLIGHTS делал исключительно для вывода и фильтра, не для работы с API
+- не успел сделать responsive версию и тесты, потому что закрывал основные проекты
 
 ## Project setup
 ```
@@ -15,20 +19,7 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
 ### Lints and fixes files
 ```
 npm run lint
 ```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
